@@ -1,2 +1,9 @@
-package com.example.astonintegration.controller;public class Home {
+package com.example.astonintegration.controller;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class Home {
+
+
 }
