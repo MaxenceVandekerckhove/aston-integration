@@ -9,7 +9,6 @@ env:
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
-    if: ${{ vars.USE_VARIABLES == 'true' }}
     environment: ${{ vars.DAY_OF_THE_WEEK }}
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
