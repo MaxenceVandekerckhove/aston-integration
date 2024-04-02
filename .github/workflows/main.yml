@@ -15,7 +15,7 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v4
       - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
-      - run: echo "Today is ${{ env.DAY_OF_WEEK }}!"
+      - run: echo "Today is ${{ env.DAY_OF_THE_WEEK }}!"
       - run: echo "🖥️ The workflow is now ready to test your code on the runner."
       - name: List files in the repository
         run: |
