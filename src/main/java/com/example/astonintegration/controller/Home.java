@@ -8,7 +8,7 @@ public class Home {
 
     @GetMapping("/")
     public String index() {
-        return "Greetings from Spring Boot Ammigo!";
+        return "Greetings from Spring Boot Friend!";
     }
 
 }
