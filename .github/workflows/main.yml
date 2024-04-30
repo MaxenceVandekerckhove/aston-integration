@@ -46,7 +46,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: cplcrossfire/testagrocd:latest
+          tags: cplcrossfire/testagrocd:${{ github.sha }}
 
       - name: Checkout du code
         uses: actions/checkout@v2
@@ -55,5 +55,5 @@ jobs:
         run: argocd login --insecure --username admin GFJsmylR3u0F1L2p argocd-server-7cbbdb87d7-4xxwv
 
       - name: Déployement de la dernière image
-        run: argocd app set aston-integration --docker-image cplcrossfire/testagrocd:latest
+        run: argocd app set aston-integration --docker-image cplcrossfire/testagrocd:${{ github.sha }}
 
